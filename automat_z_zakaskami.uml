@@ -1,8 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Ad1IIGGlEeyFtpIQMUbW0Q" name="model">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Ad1IIGGlEeyFtpIQMUbW0Q" name="model">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_Ae2b0GGlEeyFtpIQMUbW0Q">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_AeR0EGGlEeyFtpIQMUbW0Q" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_AeR0EGGlEeyFtpIQMUbW0Q" name="Interaction1">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_TgU58GGrEeyFtpIQMUbW0Q" name="Klient" coveredBy="_Za8BwGGsEeyFtpIQMUbW0Q _k9rFIWGsEeyFtpIQMUbW0Q _BoGCMGGtEey11PGTcj2Rrw _fdiA4WGtEey11PGTcj2Rrw _ktZ_EWGtEey11PGTcj2Rrw _BCBrQWGuEey11PGTcj2Rrw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Vy4ycGGrEeyFtpIQMUbW0Q" name="Panel z przyciskami" coveredBy="_Za8BwWGsEeyFtpIQMUbW0Q"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_7Wy4sGGrEeyFtpIQMUbW0Q" name="Wyswietlacz" coveredBy="_k9rFIGGsEeyFtpIQMUbW0Q _fdiA4GGtEey11PGTcj2Rrw _ktZ_EGGtEey11PGTcj2Rrw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_9z-FwGGrEeyFtpIQMUbW0Q" name="System przyjmujacy gotowke" coveredBy="_BoGCMWGtEey11PGTcj2Rrw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_BW4y4GGsEeyFtpIQMUbW0Q" name="System wydajacy reszte"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_8-OeoGGtEey11PGTcj2Rrw" name="System wydajacy produkt" coveredBy="_BCBrQGGuEey11PGTcj2Rrw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Za8BwGGsEeyFtpIQMUbW0Q" name="Message7SendEvent" covered="_TgU58GGrEeyFtpIQMUbW0Q" message="_Za6zoGGsEeyFtpIQMUbW0Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Za8BwWGsEeyFtpIQMUbW0Q" name="Message7ReceiveEvent" covered="_Vy4ycGGrEeyFtpIQMUbW0Q" message="_Za6zoGGsEeyFtpIQMUbW0Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_k9rFIGGsEeyFtpIQMUbW0Q" name="Message10SendEvent" covered="_7Wy4sGGrEeyFtpIQMUbW0Q" message="_k9qeEGGsEeyFtpIQMUbW0Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_k9rFIWGsEeyFtpIQMUbW0Q" name="Message10ReceiveEvent" covered="_TgU58GGrEeyFtpIQMUbW0Q" message="_k9qeEGGsEeyFtpIQMUbW0Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BoGCMGGtEey11PGTcj2Rrw" name="Message13SendEvent" covered="_TgU58GGrEeyFtpIQMUbW0Q" message="_BoBwwGGtEey11PGTcj2Rrw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BoGCMWGtEey11PGTcj2Rrw" name="Message13ReceiveEvent" covered="_9z-FwGGrEeyFtpIQMUbW0Q" message="_BoBwwGGtEey11PGTcj2Rrw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fdiA4GGtEey11PGTcj2Rrw" name="Message16SendEvent" covered="_7Wy4sGGrEeyFtpIQMUbW0Q" message="_fdhZ0GGtEey11PGTcj2Rrw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fdiA4WGtEey11PGTcj2Rrw" name="Message16ReceiveEvent" covered="_TgU58GGrEeyFtpIQMUbW0Q" message="_fdhZ0GGtEey11PGTcj2Rrw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ktZ_EGGtEey11PGTcj2Rrw" name="Message19SendEvent" covered="_7Wy4sGGrEeyFtpIQMUbW0Q" message="_ktZYAGGtEey11PGTcj2Rrw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ktZ_EWGtEey11PGTcj2Rrw" name="Message19ReceiveEvent" covered="_TgU58GGrEeyFtpIQMUbW0Q" message="_ktZYAGGtEey11PGTcj2Rrw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BCBrQGGuEey11PGTcj2Rrw" name="Message22SendEvent" covered="_8-OeoGGtEey11PGTcj2Rrw" message="_BCBEMGGuEey11PGTcj2Rrw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BCBrQWGuEey11PGTcj2Rrw" name="Message22ReceiveEvent" covered="_TgU58GGrEeyFtpIQMUbW0Q" message="_BCBEMGGuEey11PGTcj2Rrw"/>
+    <message xmi:type="uml:Message" xmi:id="_Za6zoGGsEeyFtpIQMUbW0Q" name="Wybor produktu" messageSort="asynchCall" receiveEvent="_Za8BwWGsEeyFtpIQMUbW0Q" sendEvent="_Za8BwGGsEeyFtpIQMUbW0Q"/>
+    <message xmi:type="uml:Message" xmi:id="_k9qeEGGsEeyFtpIQMUbW0Q" name="Wyswietlenie informacji o cenie i wplacie przez kilenta 0zl" messageSort="reply" receiveEvent="_k9rFIWGsEeyFtpIQMUbW0Q" sendEvent="_k9rFIGGsEeyFtpIQMUbW0Q"/>
+    <message xmi:type="uml:Message" xmi:id="_BoBwwGGtEey11PGTcj2Rrw" name="Zaplata za produkt odliczona kwota" messageSort="asynchCall" receiveEvent="_BoGCMWGtEey11PGTcj2Rrw" sendEvent="_BoGCMGGtEey11PGTcj2Rrw"/>
+    <message xmi:type="uml:Message" xmi:id="_fdhZ0GGtEey11PGTcj2Rrw" name="Informacja o ilosci wplaconej gotowki " messageSort="reply" receiveEvent="_fdiA4WGtEey11PGTcj2Rrw" sendEvent="_fdiA4GGtEey11PGTcj2Rrw"/>
+    <message xmi:type="uml:Message" xmi:id="_ktZYAGGtEey11PGTcj2Rrw" name="Informacja o wydawaniu produktu" messageSort="reply" receiveEvent="_ktZ_EWGtEey11PGTcj2Rrw" sendEvent="_ktZ_EGGtEey11PGTcj2Rrw"/>
+    <message xmi:type="uml:Message" xmi:id="_BCBEMGGuEey11PGTcj2Rrw" name="Wydanie produktu" messageSort="reply" receiveEvent="_BCBrQWGuEey11PGTcj2Rrw" sendEvent="_BCBrQGGuEey11PGTcj2Rrw"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Activity" xmi:id="_AehEoGGlEeyFtpIQMUbW0Q" name="Activity2"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_zWohAGGnEeyFtpIQMUbW0Q" name="Klient"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2aCnoGGnEeyFtpIQMUbW0Q" name="Wybiera produkt"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_6iK6oGGnEeyFtpIQMUbW0Q" name="Oplaca transkacje "/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_CLGa4GGoEeyFtpIQMUbW0Q" name="Anuluje transakcje "/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_FPjqYGGoEeyFtpIQMUbW0Q" name="Sprawdza cene na wyswietlaczu"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_TeqNYGGoEeyFtpIQMUbW0Q" name="Odbiera reszte "/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Vxi2AGGoEeyFtpIQMUbW0Q" name="Odbiera produkt"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-YM7kGGoEeyFtpIQMUbW0Q" memberEnd="_-YM7k2GoEeyFtpIQMUbW0Q _-YM7lGGoEeyFtpIQMUbW0Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-YM7kWGoEeyFtpIQMUbW0Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-YM7kmGoEeyFtpIQMUbW0Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-YM7k2GoEeyFtpIQMUbW0Q" name="wybierz produkt" type="_2aCnoGGnEeyFtpIQMUbW0Q" association="_-YM7kGGoEeyFtpIQMUbW0Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-YM7lGGoEeyFtpIQMUbW0Q" name="klient" type="_zWohAGGnEeyFtpIQMUbW0Q" association="_-YM7kGGoEeyFtpIQMUbW0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__oKuoGGoEeyFtpIQMUbW0Q" memberEnd="__oKuo2GoEeyFtpIQMUbW0Q __oKupGGoEeyFtpIQMUbW0Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__oKuoWGoEeyFtpIQMUbW0Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__oKuomGoEeyFtpIQMUbW0Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__oKuo2GoEeyFtpIQMUbW0Q" name="sprawdza cene na wyswietlaczu" type="_FPjqYGGoEeyFtpIQMUbW0Q" association="__oKuoGGoEeyFtpIQMUbW0Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__oKupGGoEeyFtpIQMUbW0Q" name="klient" type="_zWohAGGnEeyFtpIQMUbW0Q" association="__oKuoGGoEeyFtpIQMUbW0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DWNGoGGpEeyFtpIQMUbW0Q" memberEnd="_DWNtsmGpEeyFtpIQMUbW0Q _DWNts2GpEeyFtpIQMUbW0Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DWNtsGGpEeyFtpIQMUbW0Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DWNtsWGpEeyFtpIQMUbW0Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DWNtsmGpEeyFtpIQMUbW0Q" name="oplaca transkacje " type="_6iK6oGGnEeyFtpIQMUbW0Q" association="_DWNGoGGpEeyFtpIQMUbW0Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DWNts2GpEeyFtpIQMUbW0Q" name="klient" type="_zWohAGGnEeyFtpIQMUbW0Q" association="_DWNGoGGpEeyFtpIQMUbW0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Eif6oGGpEeyFtpIQMUbW0Q" memberEnd="_Eif6o2GpEeyFtpIQMUbW0Q _Eif6pGGpEeyFtpIQMUbW0Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Eif6oWGpEeyFtpIQMUbW0Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Eif6omGpEeyFtpIQMUbW0Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Eif6o2GpEeyFtpIQMUbW0Q" name="anuluje transakcje " type="_CLGa4GGoEeyFtpIQMUbW0Q" association="_Eif6oGGpEeyFtpIQMUbW0Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Eif6pGGpEeyFtpIQMUbW0Q" name="klient" type="_zWohAGGnEeyFtpIQMUbW0Q" association="_Eif6oGGpEeyFtpIQMUbW0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FzhdoGGpEeyFtpIQMUbW0Q" memberEnd="_Fzhdo2GpEeyFtpIQMUbW0Q _FzhdpGGpEeyFtpIQMUbW0Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FzhdoWGpEeyFtpIQMUbW0Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FzhdomGpEeyFtpIQMUbW0Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Fzhdo2GpEeyFtpIQMUbW0Q" name="odbiera produkt" type="_Vxi2AGGoEeyFtpIQMUbW0Q" association="_FzhdoGGpEeyFtpIQMUbW0Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FzhdpGGpEeyFtpIQMUbW0Q" name="klient" type="_zWohAGGnEeyFtpIQMUbW0Q" association="_FzhdoGGpEeyFtpIQMUbW0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HyFcEGGpEeyFtpIQMUbW0Q" memberEnd="_HyGDImGpEeyFtpIQMUbW0Q _HyGDI2GpEeyFtpIQMUbW0Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HyGDIGGpEeyFtpIQMUbW0Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HyGDIWGpEeyFtpIQMUbW0Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HyGDImGpEeyFtpIQMUbW0Q" name="odbiera reszte " type="_TeqNYGGoEeyFtpIQMUbW0Q" association="_HyFcEGGpEeyFtpIQMUbW0Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HyGDI2GpEeyFtpIQMUbW0Q" name="klient" type="_zWohAGGnEeyFtpIQMUbW0Q" association="_HyFcEGGpEeyFtpIQMUbW0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_TmDZYGGpEeyFtpIQMUbW0Q" client="_FPjqYGGoEeyFtpIQMUbW0Q" supplier="_2aCnoGGnEeyFtpIQMUbW0Q"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_UfgJ4GGpEeyFtpIQMUbW0Q" client="_6iK6oGGnEeyFtpIQMUbW0Q" supplier="_FPjqYGGoEeyFtpIQMUbW0Q"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_X3G-4GGpEeyFtpIQMUbW0Q" client="_TeqNYGGoEeyFtpIQMUbW0Q" supplier="_6iK6oGGnEeyFtpIQMUbW0Q"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Y147UGGpEeyFtpIQMUbW0Q" client="_Vxi2AGGoEeyFtpIQMUbW0Q" supplier="_6iK6oGGnEeyFtpIQMUbW0Q"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_bIJ44GGpEeyFtpIQMUbW0Q" client="_CLGa4GGoEeyFtpIQMUbW0Q" supplier="_FPjqYGGoEeyFtpIQMUbW0Q"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_b5gdUGGpEeyFtpIQMUbW0Q" client="_TeqNYGGoEeyFtpIQMUbW0Q" supplier="_CLGa4GGoEeyFtpIQMUbW0Q"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_hwHEUGGpEeyFtpIQMUbW0Q" name="Serwisant"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_jNQ-0GGpEeyFtpIQMUbW0Q" name="Uruchamia tryb konserwacji"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_sDPhAGGpEeyFtpIQMUbW0Q" name="Uzupelnia produkty"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_xrC3AGGpEeyFtpIQMUbW0Q" name="Wyciaga pieniadze "/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3OeN4GGqEeyFtpIQMUbW0Q" memberEnd="_3Oe08mGqEeyFtpIQMUbW0Q _3Oe082GqEeyFtpIQMUbW0Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3Oe08GGqEeyFtpIQMUbW0Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3Oe08WGqEeyFtpIQMUbW0Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3Oe08mGqEeyFtpIQMUbW0Q" name="uruchamia tryb konserwacji" type="_jNQ-0GGpEeyFtpIQMUbW0Q" association="_3OeN4GGqEeyFtpIQMUbW0Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3Oe082GqEeyFtpIQMUbW0Q" name="serwisant" type="_hwHEUGGpEeyFtpIQMUbW0Q" association="_3OeN4GGqEeyFtpIQMUbW0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4HUhcGGqEeyFtpIQMUbW0Q" memberEnd="_4HUhc2GqEeyFtpIQMUbW0Q _4HUhdGGqEeyFtpIQMUbW0Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4HUhcWGqEeyFtpIQMUbW0Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4HUhcmGqEeyFtpIQMUbW0Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4HUhc2GqEeyFtpIQMUbW0Q" name="uzupelnia produkty" type="_sDPhAGGpEeyFtpIQMUbW0Q" association="_4HUhcGGqEeyFtpIQMUbW0Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4HUhdGGqEeyFtpIQMUbW0Q" name="serwisant" type="_hwHEUGGpEeyFtpIQMUbW0Q" association="_4HUhcGGqEeyFtpIQMUbW0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4sxX4GGqEeyFtpIQMUbW0Q" memberEnd="_4sxX42GqEeyFtpIQMUbW0Q _4sxX5GGqEeyFtpIQMUbW0Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4sxX4WGqEeyFtpIQMUbW0Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4sxX4mGqEeyFtpIQMUbW0Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4sxX42GqEeyFtpIQMUbW0Q" name="wyciaga pieniadze " type="_xrC3AGGpEeyFtpIQMUbW0Q" association="_4sxX4GGqEeyFtpIQMUbW0Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4sxX5GGqEeyFtpIQMUbW0Q" name="serwisant" type="_hwHEUGGpEeyFtpIQMUbW0Q" association="_4sxX4GGqEeyFtpIQMUbW0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_7hmP8GGqEeyFtpIQMUbW0Q" client="_sDPhAGGpEeyFtpIQMUbW0Q" supplier="_jNQ-0GGpEeyFtpIQMUbW0Q"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_88h84GGqEeyFtpIQMUbW0Q" client="_xrC3AGGpEeyFtpIQMUbW0Q" supplier="_jNQ-0GGpEeyFtpIQMUbW0Q"/>
 </uml:Model>
